@@ -130,31 +130,35 @@ Deze tool **downloadt geen MP3’s of audio**. Het verwerkt uitsluitend metadata
 ```
 
 ## 🛠 Installatie
+```bash
 git clone https://github.com/yourusername/MP3-Extractor.git
 cd MP3-Extractor
 npm install
-
+```
 API keys instellen
 
-Ga naar: https://developer.spotify.com/dashboard
+1. Ga naar: https://developer.spotify.com/dashboard
 
-Maak een nieuwe applicatie
+2. Maak een nieuwe applicatie
 
-Voeg deze variabelen toe in .env:
-
+3. Voeg deze variabelen toe in .env:
+```ini
 SPOTIFY_CLIENT_ID=your_id
 SPOTIFY_CLIENT_SECRET=your_secret
-
+```
 ## ▶️ Gebruik
 Playlist metadata ophalen:
+```bash
 node src/api/fetchPlaylist.js <playlist_id>
-
+```
 Track metadata:
+```bash
 node src/api/fetchTrack.js <track_id>
-
+```
 Artiest metadata:
+```bash
 node src/api/fetchArtist.js <artist_id>
-
+```
 ## 🌱 Hoe het project is ontstaan
 
 Dit project begon als een behoefte aan een eenvoudige manier om muziekmetadata te exporteren voor datavisualisaties en muziekanalyse-tools. Veel bestaande tools waren te technisch, te beperkt of overtreden de Spotify voorwaarden.
