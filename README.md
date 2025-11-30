@@ -92,8 +92,11 @@ Deze tool **downloadt geen MP3’s of audio**. Het verwerkt uitsluitend metadata
 ├── README.md                       (Dit document)
 ├── package.json                    (Project config)
 └── LICENSE
+```
 
+## Features
 
+```txt
 ===========================================
             MP3-Extractor Features
 ===========================================
@@ -124,7 +127,94 @@ Deze tool **downloadt geen MP3’s of audio**. Het verwerkt uitsluitend metadata
     - JSON
     - CSV
     - TXT-lijsten
+```
 
+## 🛠 Installatie
+git clone https://github.com/yourusername/MP3-Extractor.git
+cd MP3-Extractor
+npm install
+
+API keys instellen
+
+Ga naar: https://developer.spotify.com/dashboard
+
+Maak een nieuwe applicatie
+
+Voeg deze variabelen toe in .env:
+
+SPOTIFY_CLIENT_ID=your_id
+SPOTIFY_CLIENT_SECRET=your_secret
+
+## ▶️ Gebruik
+Playlist metadata ophalen:
+node src/api/fetchPlaylist.js <playlist_id>
+
+Track metadata:
+node src/api/fetchTrack.js <track_id>
+
+Artiest metadata:
+node src/api/fetchArtist.js <artist_id>
+
+## 🌱 Hoe het project is ontstaan
+
+Dit project begon als een behoefte aan een eenvoudige manier om muziekmetadata te exporteren voor datavisualisaties en muziekanalyse-tools. Veel bestaande tools waren te technisch, te beperkt of overtreden de Spotify voorwaarden.
+MP3-Extractor wil een transparante, legale en educatieve oplossing bieden.
+
+## 🎯 Motivatie
+
+Muziekdata toegankelijk maken voor iedereen
+
+Tools bouwen voor muziekonderzoek, AI-projecten en analytics
+
+Een voorbeeld geven van hoe je correct met Spotify API werkt
+
+## ⚠️ Limitaties
+
+Geen MP3-, audio- of stream-download (bedoeld)
+
+Afhankelijk van de Spotify Web API (rate limits)
+
+Je hebt een Spotify Developer Account nodig
+
+## 🧩 Challenges
+
+Omgaan met API rate limits
+
+Structureren van complexe metadata
+
+Export-cleaning voor verschillende formaten
+
+## 🧠 Doel & Oplossing
+
+Probleem:
+Muziekdata is moeilijk te exporteren en niet altijd overzichtelijk beschikbaar.
+
+Oplossing:
+MP3-Extractor maakt metadata eenvoudig toegankelijk, exporteerbaar en bruikbaar voor software, analyses en onderzoek.
+
+## 🎯 Intended Use
+
+Muziek-analyse
+
+Data science projecten
+
+Onderzoek naar streaming-trends
+
+Exporteren van playlist-statistieken
+
+JSON/CSV datasets genereren voor ML-modellen
+
+## 👥 Credits
+
+Spotify Developer Platform
+
+Open-source contributors
+
+Documentatie & API structuren geïnspireerd door Spotify Web API voorbeelden
+
+## 📄 Licentie
+
+MIT License — vrij te gebruiken en aan te passen zolang de licentie behouden blijft.
 [6] Volledig Compliant met Spotify API
     - Geen MP3-download
     - Geen DRM-omzeiling
