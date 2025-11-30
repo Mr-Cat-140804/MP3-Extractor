@@ -1,5 +1,7 @@
 # 🎧 MP3-Extractor (Spotify Metadata Tool)
 
+![original-8822777a1cedc2795116bab96cad73de](https://github.com/user-attachments/assets/1722a20a-b0ed-4a59-bc49-4abfcf96a080)
+
 MP3-Extractor is een open-source tool die muziek-informatie (metadata) verzamelt via de **officiële Spotify Web API**.  
 Het doel van dit project is om snel en overzichtelijk **track-, playlist-, artiest- en audiofeature-gegevens** te kunnen exporteren zonder audio te downloaden of DRM te omzeilen.
 
